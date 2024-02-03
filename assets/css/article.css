@@ -1,0 +1,255 @@
+/* post slider */
+.post-slider{
+  position: relative;
+  top: 120px;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+.post-slider .slider-title{
+  padding-bottom: 25px;
+}
+
+.post-slider .slider .card .meta-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 20px;
+  margin-block-end: 12px;
+}
+
+.post-slider .slider .card .card-meta{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--midnight-green);
+}
+
+.post-slider .slider .card .img{
+  height: 300px;
+  width: 100%;
+}
+
+.post-slider .slider .card .img img {
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+}
+
+.post-slider .slider .card .title{
+  font-size: 2rem;
+  margin: 0;
+}
+
+.post-slider .slider .card .card-meta ion-icon { font-size: 1.8rem; }
+
+/* content */
+.post{
+  width: 90%;
+  margin: 30px auto 30px;
+  position: relative;
+  top: 100px;
+  height: 1120px;
+}
+
+.post .main-content{
+  width: 70%;
+  float: left;
+
+}
+
+.post .main-content.single{
+  background-color: #fff;
+  padding: 20px 50px;
+  font-size: 1.2rem;
+}
+
+.post .main-content .info{
+  width: 95%;
+  height: 270px;
+  margin: 10px auto;
+  border-radius: 5px;
+  background-color: #eeee;
+  position: relative;
+  
+}
+
+.post .main-content .info .post-image{
+  width: 40%;
+  height: 100%;
+  float: left;
+  
+}
+
+.post .main-content .info .post-preview{
+  padding: 10px;
+  width: 60%;
+  float: right;
+}
+
+.post .main-content .post-preview .read-more{
+  position: relative;
+  font-weight: 200;
+  width: 100px;
+  justify-content: center;
+  padding: 8px;
+}
+
+.post .main-content .recent-post-title{
+  margin: 20px;
+}
+
+.post .main-content .post-content{
+  font-size:1.7rem;
+  width: 100%;
+  font-family: 'Poppins',sans-serif;
+  color: black;
+  display:inline-block ;
+}
+
+.post .main-content .post-content article {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.post .main-content .post-content article h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.post .main-content .post-content article h3 {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.post .main-content .post-content article ul {
+  margin-left: 20px;
+}
+
+.post .main-content .post-content article li {
+  margin-bottom: 10px;
+  list-style-type:disc;
+}
+
+.post .main-content .post-content article p {
+  margin-bottom: 20px;
+}
+
+/* sidebar */
+.post .sidebar{
+  width: 30%;
+  float: left;
+  margin-top: 90px;
+}
+
+.post .sidebar.single{
+  padding: 0px 10px;
+}
+
+.post .sidebar .section{
+  background: #eeee;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.post .sidebar #text-input{
+  padding: .7rem 1rem;
+  display: block;
+  width: 100%;
+  border-width: 5px;
+  border: 1px solid #00adb3;
+  border-radius: 5px;
+  outline: none;
+  color: #00adb3;
+  line-height: 1.4rem;
+}
+
+.post .sidebar .section ul.topics, ul.title{
+  transition: all 0.3s;
+  padding: 10px 0 10px 0px;
+  border-top: 1px solid #00adb3;
+  display: block;
+}
+
+.post .sidebar .section ul.topics:hover{
+padding-left: 10px;
+transition: all 0.3s;
+}
+
+.post .sidebar .section ul.title img{
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin-right: 10px;
+}
+
+.post .sidebar .section ul.title:hover{
+  color: #09b4b9;
+  transition: all 0.3s;
+}
+
+.post .sidebar .section .post{
+  border-top: 1px solid #00adb3;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+
+.clearfix ::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+@media only screen and (max-width:987px){
+  .post{
+    width: 100%;
+    height: 1550px;
+  }  
+  
+  .post .main-content{
+    width: 100%;
+    
+  }
+
+  .post .main-content .info{
+    width: 100%;
+    padding: 10px;
+  }
+
+  .post .sidebar{
+    width: 100%;
+    padding: 10px;
+  }
+
+}
+
+@media only screen and (max-width:618px){
+  .post{
+    height: 2300px;
+  } 
+
+  .post .main-content .info{
+    height: auto;
+  }
+  
+  .post .main-content .info .post-image{
+    width: 100%;
+    height: auto;
+  }
+  
+  .post .main-content .info .post-preview{
+    width: 100%;
+  }
+  .post .main-content .post-preview .read-more{
+    position: static;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,72 @@
+.header{
+  background-color: #0B111D;
+}
+
+.auth-content{
+  width: 30%;
+  margin: 117px auto;
+  padding: 20px;
+  background-color: #eeee;
+  border-radius: 5px;
+  margin-bottom: 0px;
+}
+
+.auth-content form div{
+  margin-bottom: 10px;
+}
+
+.auth-content form div .text-input{
+  padding: .7rem 1rem;
+  display: block;
+  width: 100%;
+  border-width: 5px;
+  border: 1px solid #00adb3;
+  border-radius: 5px;
+  outline: none;
+  color: #00adb3;
+  line-height: 1.4rem;
+}
+.auth-content form div .password-container {
+  position: relative;
+}
+
+.auth-content form div .password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.auth-content form div .password-toggle ion-icon {
+  font-size: 20px;
+  color: #333; /* Adjust the color as needed */
+}
+.auth-content form p a{
+  text-decoration: underline;
+}
+
+.auth-content form .btn-big{
+  font-size: 17px;
+  padding: 5px;
+  display: block;
+  width: 100%;
+}
+
+@media only screen and (max-width:987px) {
+  .auth-content{
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width:618px){
+  .auth-content{
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width:420px){
+  .auth-content{
+    width: 70%;
+  }
+}
